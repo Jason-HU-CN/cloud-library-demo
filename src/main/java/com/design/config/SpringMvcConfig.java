@@ -8,13 +8,16 @@ import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
+/*
+ * 等同于<context:component-scan base-package="com.design.controller">
+ * */
 @ComponentScan({"com.design.controller"})
 @EnableWebMvc
 public class SpringMvcConfig implements WebMvcConfigurer {
     /*
-    * 开启静态资源访问
-    * 类似在Spring MVC的配置文件中设置<mvc:default-servlet-handler/>元素
-    * */
+     * 开启静态资源访问
+     * 类似在Spring MVC的配置文件中设置<mvc:default-servlet-handler/>元素
+     * */
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
@@ -22,6 +25,6 @@ public class SpringMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
-        registry.jsp("/admin/",".jsp");
+        registry.jsp("/admin/", ".jsp");
     }
 }
