@@ -9,8 +9,51 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
+<div class="main-w3layouts wrapper">
+    <div class="main-agileinfo">
+        <div class="agileits-top">
+            <form action="#" method="post">
+                <input class="text" type="text" name="Username" placeholder="姓名" required="">
+                <input class="text" type="password" name="password" placeholder="密码" required="">
+                <div class="wthree-text">
+                    <ul>
+                        <li>
+                            <label class="anim">
+                                <input type="checkbox" class="checkbox" required="">
+                                <span> 记住 ?</span>
+                            </label>
+                        </li>
+                        <li><a href="#">忘记密码 ?</a> </li>
+                    </ul>
+                    <div class="clear"> </div>
+                </div>
+                <input type="submit" value="登录">
+            </form>
+            <p>创建一个账号? <a href="#"> 立即登录!</a></p>
+        </div>
+    </div>
+    <!-- copyright -->
+    <div class="w3copyright-agile">
+        <p>© 2017 All rights Reserved</p>
+    </div>
+    <!-- //copyright -->
+    <ul class="w3lsg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<!-- //main -->
 
 </body>
 </html>
